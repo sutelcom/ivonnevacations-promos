@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Royal Caribbean desde Miami · 60% al 2.º huésped · Ivonne Vacations</title>
+<meta name="description" content="Promoción Royal Caribbean hasta el 30 de octubre: 60% de descuento al 2.º huésped y 3.º y 4.º huésped gratis. Cruceros desde Miami de 3 a 9 noches, con asesoría en español para familias de Ecuador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: Ivonne Vacations brand (deep teal + paper + coral). Photo hero, sailings as a filterable list of "boarding cards", Ecuador trip steps, family trust block, WhatsApp close. Single brand look in every theme. */
+:root{
+  --bg:#0c3445; --deep:#08212b; --paper:#fbf3e2; --card:#fffaf0; --ink:#142027; --soft:#4d5f66; --line:#e6dcc6;
+  --coral:#ef7245; --coral-d:#d65a30; --gold:#dba845; --wa:#25d366; --wa-ink:#062b14; --on-dark:#f3eee2; --on-dark-soft:#a9c0c8;
+  --f-display:"Bricolage Grotesque", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --f-body:"Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4.4vw,2.8rem);line-height:1.05;font-weight:800}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--coral-d)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 24px;font:600 1rem var(--f-body);text-decoration:none;cursor:pointer;white-space:nowrap}
+.btn-wa{background:var(--wa);color:var(--wa-ink)}
+.btn-wa:hover{filter:brightness(1.06)}
+.btn-line{background:transparent;color:var(--on-dark);border:1.5px solid rgba(243,238,226,.5)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+.top{background:var(--deep);color:var(--on-dark);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font-family:var(--f-display);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem}
+.brand img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain}
+.top .btn{padding:9px 16px;font-size:.88rem}
+
+/* hero */
+.hero{background:var(--bg);color:var(--on-dark)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:56px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);line-height:1;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero .eyebrow{color:var(--gold)}
+.hero .lede{color:var(--on-dark-soft);font-size:1.12rem;margin-top:18px;max-width:46ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:20px;font-size:.85rem;color:var(--gold);list-style:none;padding:0}
+.checks li::before{content:"✓ "}
+.photo{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:linear-gradient(180deg,#7fb3d5 0%,#bcd9e8 46%,#2f7d95 47%,#0c3445 100%)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .stamp{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(8,33,43,.86);color:var(--on-dark);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-family:var(--f-mono);font-size:.72rem}
+.stamp b{display:block;font-family:var(--f-display);font-size:1.35rem;color:var(--paper);font-weight:800}
+.stamp span{color:var(--on-dark-soft);text-transform:uppercase;letter-spacing:.1em}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:36px}.photo{aspect-ratio:16/11}}
+
+section{padding-block:64px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.head p{color:var(--soft);max-width:54ch;margin-top:10px}
+
+/* filters + list */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 .88rem var(--f-body);border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 15px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--bg);border-color:var(--bg);color:var(--paper)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;min-width:0}
+.c-top{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:18px 18px 10px;align-items:start}
+.nights{width:64px;border-radius:12px;background:var(--bg);color:var(--paper);text-align:center;padding:8px 0 6px}
+.nights b{display:block;font-family:var(--f-display);font-size:1.9rem;line-height:.95;font-weight:800;color:var(--gold)}
+.nights i{font-style:normal;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em}
+.card h3{font-size:1.25rem;line-height:1.15;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font-family:var(--f-mono);font-size:.7rem;font-weight:500;border-radius:6px;padding:3px 8px;background:#e7f0ef;color:var(--bg)}
+.tag.new{background:var(--coral);color:#fff}
+.route{list-style:none;margin:0;padding:2px 18px 12px;display:flex;flex-wrap:wrap;font-family:var(--f-mono);font-size:.75rem;color:var(--soft)}
+.route li+li::before{content:"›";margin:0 6px;color:var(--coral)}
+.route li.port{color:var(--ink);font-weight:600}
+.season{padding:0 18px 14px;font-size:.9rem}
+.note{font-size:.8rem;color:var(--soft);margin-top:4px}
+details{border-top:1px dashed var(--line);padding:10px 18px}
+summary{cursor:pointer;font-weight:600;font-size:.88rem;color:var(--coral-d)}
+.dates{display:grid;gap:6px;margin-top:10px;font-family:var(--f-mono);font-size:.74rem;font-variant-numeric:tabular-nums}
+.dates div{display:grid;grid-template-columns:48px 1fr;gap:8px}
+.dates em{font-style:normal;color:var(--soft)}
+.c-foot{margin-top:auto;border-top:1px solid var(--line);padding:12px 18px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.c-foot span{font-size:.8rem;color:var(--soft)}
+.c-foot .btn{padding:9px 15px;font-size:.86rem}
+.more{margin-top:20px;font-size:.92rem;color:var(--soft);border:1.5px dashed var(--line);border-radius:12px;padding:14px 18px}
+.more b{color:var(--ink)}
+
+/* steps */
+.steps-sec{background:var(--card);border-block:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;gap:6px;align-content:start;min-width:0}
+.steps li::before{content:"0" counter(s);font-family:var(--f-mono);font-weight:600;color:var(--coral);font-size:.9rem}
+.steps h3{font-size:1.2rem;font-weight:700}
+.steps p{color:var(--soft);font-size:.94rem}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* trust + docs */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+.panel{border-radius:18px;padding:28px;min-width:0}
+.family{background:var(--bg);color:var(--on-dark);display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center}
+.family img{width:150px;height:150px;border-radius:14px;object-fit:cover;background:#2a5566}
+.family h2{font-size:1.7rem}
+.family p{color:var(--on-dark-soft);margin-top:10px}
+.docs{background:var(--card);border:1px solid var(--line)}
+.docs h2{font-size:1.7rem;margin-top:6px}
+.docs ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.docs li{display:grid;grid-template-columns:20px 1fr;gap:8px;font-size:.95rem}
+.docs li::before{content:"✓";color:var(--coral-d);font-weight:700}
+@media (max-width:860px){.duo{grid-template-columns:1fr}}
+@media (max-width:480px){.family{grid-template-columns:1fr}.family img{width:100%;height:180px}}
+
+/* close */
+.close{background:var(--deep);color:var(--on-dark);text-align:left}
+.close .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.close p{color:var(--on-dark-soft);margin-top:10px;max-width:50ch}
+footer{background:var(--deep);color:var(--on-dark-soft);font-size:.78rem;border-top:1px solid rgba(255,255,255,.08)}
+footer .wrap{padding-block:22px;display:grid;gap:6px}
+.float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+@media (min-width:861px){.float{display:none}}
+
+.promo-hero{position:relative;display:block;border-radius:22px;overflow:hidden;max-width:420px;justify-self:center;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.promo-hero img{display:block;width:100%;height:auto}
+.promo-until{position:absolute;left:12px;top:12px;background:var(--deep);color:var(--gold);font:600 .72rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:8px}
+.promo-band{padding-block:28px;background:var(--paper)}
+.promo-band .wrap{display:grid;gap:18px}
+.promo-wide{display:block;border-radius:14px;overflow:hidden}
+.promo-wide img{display:block;width:100%;height:auto}
+.promo-text{max-width:760px}
+.promo-text p{margin:.4em 0}
+.promo-title{font-family:var(--f-display);font-size:1.35rem;color:var(--bg)}
+.promo-fine{font-size:.8rem;color:var(--soft)}
+@media (max-width:760px){.promo-wide{display:none}}
+
+/* hero promo */
+.deadline{display:inline-flex;align-items:center;gap:8px;background:var(--coral);color:#fff;font:600 .8rem var(--f-mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border-radius:8px;margin:0}
+.deadline .dot{width:8px;height:8px;border-radius:50%;background:#fff;flex:none}
+.deadline.over{background:var(--soft)}
+.perks{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;font-size:1.05rem}
+.perks li{display:grid;grid-template-columns:22px 1fr;color:var(--on-dark)}
+.perks li::before{content:"✓";color:var(--gold);font-weight:700}
+.perks b{color:var(--paper)}
+.hero .lede{margin-top:14px;font-size:1rem}
+.hero-fine{font-size:.76rem;color:var(--on-dark-soft);margin-top:14px;max-width:52ch}
+.hero-fine a{color:var(--gold)}
+@media (max-width:860px){.hero h1{font-size:clamp(2.1rem,9vw,2.6rem)}.promo-hero{display:none}}
+</style>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','327778608601970');fbq('track','PageView');</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="../img/logo.png" alt="" onerror="this.style.display='none'">Ivonne Vacations</a>
+    <a class="btn btn-wa wa-link" href="https://wa.me/14075764149" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="deadline" id="deadline"><span class="dot" aria-hidden="true"></span><span id="deadline-text">Promoción válida hasta el 30 de octubre</span></p>
+        <p class="eyebrow" style="margin-top:16px">Royal Caribbean · Cruceros desde Miami</p>
+        <h1 style="margin-top:10px"><em>60% de descuento</em> al 2.º huésped de tu cabina</h1>
+        <ul class="perks">
+          <li><span><b>3.º y 4.º huésped</b> navegan gratis*</span></li>
+          <li><span><b>Niños de 12 años o menos</b> navegan gratis*</span></li>
+        </ul>
+        <p class="lede">Bahamas, CocoCay y el Caribe en 3 a 9 noches. Te asesoramos en español y coordinamos tu vuelo desde Quito o Guayaquil.</p>
+        <div class="ctas">
+          <a class="btn btn-wa promo-link" href="https://wa.me/14075764149" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Quiero esta promoción</a>
+          <a class="btn btn-line" href="#salidas">Ver itinerarios</a>
+        </div>
+        <p class="hero-fine">*Reservas nuevas hasta el 30 de octubre de 2026. El 3.º y 4.º huésped gratis aplica a salidas hasta el 20 de agosto de 2027. <a href="#promo">Ver condiciones</a></p>
+      </div>
+      <a class="promo-hero" href="https://wa.me/14075764149?text=Hola%20Ivonne%20Vacations%2C%20quiero%20la%20promoci%C3%B3n%20de%20Royal%20Caribbean%20%2860%25%20de%20descuento%20al%20segundo%20hu%C3%A9sped%20%2B%203.%C2%BA%20y%204.%C2%BA%20hu%C3%A9sped%20gratis%29%20para%20un%20crucero%20desde%20Miami.%20Somos%20__%20personas%20y%20nos%20interesa%20el%20mes%20de%20__." target="_blank" rel="noopener" aria-label="Cotizar la promoción de Royal Caribbean por WhatsApp">
+        <img src="../img/rc-promo-60-400x440.jpg" alt="Royal Caribbean: 60% de descuento al segundo huésped y el 3.º y 4.º huésped navegan gratis" width="400" height="440">
+        <span class="promo-until">Promoción hasta el 30 de octubre</span>
+      </a>
+    </div>
+  </div>
+
+  <section class="promo-band" id="promo" aria-label="Promoción Royal Caribbean">
+    <div class="wrap">
+      <a class="promo-wide" href="https://wa.me/14075764149?text=Hola%20Ivonne%20Vacations%2C%20quiero%20la%20promoci%C3%B3n%20de%20Royal%20Caribbean%20%2860%25%20de%20descuento%20al%20segundo%20hu%C3%A9sped%20%2B%203.%C2%BA%20y%204.%C2%BA%20hu%C3%A9sped%20gratis%29%20para%20un%20crucero%20desde%20Miami.%20Somos%20__%20personas%20y%20nos%20interesa%20el%20mes%20de%20__." target="_blank" rel="noopener"><img src="../img/rc-promo-60-1456x180.jpg" alt="Royal Caribbean: 60% de descuento al segundo huésped + 3.º y 4.º huésped gratis" width="1456" height="180" loading="lazy"></a>
+      <div class="promo-text">
+        <p class="promo-title"><b>Promoción Royal Caribbean · hasta el 30 de octubre</b></p>
+        <p><b>60% de descuento al segundo huésped</b> de la cabina, el <b>3.º y 4.º huésped navegan gratis</b> y los <b>niños de 12 años o menos navegan gratis</b>.* Ideal para familias: cotiza tu crucero desde Miami antes de que termine.</p>
+        <a class="btn btn-wa" href="https://wa.me/14075764149?text=Hola%20Ivonne%20Vacations%2C%20quiero%20la%20promoci%C3%B3n%20de%20Royal%20Caribbean%20%2860%25%20de%20descuento%20al%20segundo%20hu%C3%A9sped%20%2B%203.%C2%BA%20y%204.%C2%BA%20hu%C3%A9sped%20gratis%29%20para%20un%20crucero%20desde%20Miami.%20Somos%20__%20personas%20y%20nos%20interesa%20el%20mes%20de%20__." target="_blank" rel="noopener">Quiero esta promoción</a>
+        <p class="promo-fine">*Promociones de Royal Caribbean para reservas nuevas, combinables entre sí; aplican sus términos y condiciones y están sujetas a disponibilidad. Cruceros de 3 noches o más. El 3.º y 4.º huésped gratis aplica solo a salidas entre el 7 de octubre de 2026 y el 20 de agosto de 2027. No aplican en Thanksgiving, Navidad y Año Nuevo, Spring Break (marzo–abril) ni verano (fines de mayo a agosto), entre otras fechas. Precios sin impuestos, tasas ni gastos portuarios. Te confirmamos si tu fecha aplica al cotizar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="salidas">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Salidas desde PortMiami</p>
+          <h2 style="margin-top:8px">Elige tu itinerario</h2>
+          <p>Según el Vacation Planner 2027/28 de Royal Caribbean. Toca "Ver fechas" y luego "Cotizar este" para escribirnos con el crucero ya elegido.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar por duración">
+          <button class="chip" id="f-all" data-f="all" aria-pressed="true">Todos</button>
+          <button class="chip" id="f-short" data-f="short" aria-pressed="false">3 a 5 noches</button>
+          <button class="chip" id="f-week" data-f="week" aria-pressed="false">7 noches</button>
+          <button class="chip" id="f-long" data-f="long" aria-pressed="false">9 noches</button>
+        </div>
+      </div>
+      <div class="list" id="list"></div>
+      <p class="more"><b>¿Prefieres otra fecha o puerto?</b> También cotizamos salidas desde Fort Lauderdale, Tampa, Orlando (Port Canaveral) y Galveston, y lo combinamos con días en Orlando.</p>
+    </div>
+  </section>
+
+  <section class="steps-sec">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">Desde Ecuador</p><h2 style="margin-top:8px">Así de fácil</h2></div></div>
+      <ol class="steps">
+        <li><h3>Nos escribes</h3><p>Nos cuentas fechas, cuántos viajan y qué ruta te gusta. Te enviamos opciones con precios del momento.</p></li>
+        <li><h3>Reservas tu cabina</h3><p>Te explicamos qué incluye cada tarifa y el depósito para separar tu cabina.</p></li>
+        <li><h3>Vuelas a Miami</h3><p>Vuelos directos desde Quito y Guayaquil. Recomendamos llegar un día antes del zarpe.</p></li>
+        <li><h3>Embarcas en PortMiami</h3><p>Te acompañamos por WhatsApp antes y durante el viaje si necesitas ayuda.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap duo">
+      <div class="panel family">
+        <img src="../img/familia-ivonne.jpg" alt="Familia de Ivonne Vacations" onerror="this.remove()">
+        <div>
+          <p class="eyebrow" style="color:var(--gold)">Quiénes somos</p>
+          <h2 style="margin-top:6px">Una familia ecuatoriana en Orlando, para tu familia</h2>
+          <p>Conocemos los puertos de Florida y lo que necesita un viajero que sale de Ecuador. Te asesoramos como lo haríamos con nuestra propia familia.</p>
+        </div>
+      </div>
+      <div class="panel docs">
+        <p class="eyebrow">Antes de reservar</p>
+        <h2>Documentos</h2>
+        <ul>
+          <li>Pasaporte vigente, idealmente con más de 6 meses de validez.</li>
+          <li>Visa de turista de EE.UU. vigente para llegar a Miami.</li>
+          <li>Algunos puertos pueden pedir requisitos adicionales. Revisamos tu caso antes de reservar.</li>
+          <li>Recomendamos seguro de viaje con cobertura en crucero.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="wrap">
+      <div>
+        <h2>¿Ya tienes una fecha en mente?</h2>
+        <p>Escríbenos con el mes y cuántos viajan. Te respondemos el mismo día con opciones y precios.</p>
+      </div>
+      <a class="btn btn-wa wa-link" href="https://wa.me/14075764149" target="_blank" rel="noopener">WhatsApp +1 407 576 4149</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© SUTELCOM LLC, operando como Ivonne Vacations · Orlando, FL · WhatsApp +1 407 576 4149 · Instagram @ivonnevacations1</p>
+    <p>Royal Caribbean y los nombres de sus barcos son marcas de Royal Caribbean Cruises Ltd. Itinerarios según el Vacation Planner 2027/28; puertos, orden y fechas sujetos a cambio por la naviera. Precios bajo consulta.</p>
+  </div>
+</footer>
+
+<a class="btn btn-wa float wa-link" href="https://wa.me/14075764149" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+<script>
+const WA = "14075764149";
+const BASE_MSG = "Hola Ivonne Vacations, vi el anuncio de cruceros Royal Caribbean desde Miami y quiero cotizar.";
+const waUrl = m => "https://wa.me/" + WA + "?text=" + encodeURIComponent(m);
+document.querySelectorAll(".wa-link").forEach(a => a.href = waUrl(BASE_MSG));
+
+const PROMO_MSG = "Hola Ivonne Vacations, quiero la promoción de Royal Caribbean (60% de descuento al segundo huésped + 3.º y 4.º huésped gratis) para un crucero desde Miami. Somos __ personas y nos interesa el mes de __.";
+document.querySelectorAll(".promo-link").forEach(a => a.href = waUrl(PROMO_MSG));
+
+// Cuenta regresiva: la promo termina el 30-oct-2026 a las 23:59 hora de Miami (EDT, UTC-4).
+const PROMO_END = new Date("2026-10-31T03:59:00Z");
+(function updateDeadline(){
+  const el = document.getElementById("deadline"), txt = document.getElementById("deadline-text");
+  const days = Math.ceil((PROMO_END - Date.now()) / 864e5);
+  if (days <= 0) { el.classList.add("over"); txt.textContent = "Promoción terminada · pregúntanos por las vigentes"; return; }
+  txt.textContent = days === 1 ? "Último día · termina el 30 de octubre" : `Quedan ${days} días · termina el 30 de octubre`;
+})();
+
+const TRIPS = [
+ {id:"m3", n:"3", g:"short", t:"Bahamas y Perfect Day CocoCay", ships:[["Wonder of the Seas"]],
+  route:["Miami","CocoCay","Nassau","Miami"], season:"Todo el año, salidas los viernes",
+  dates:[["2027","Ene 8 · Feb 19, 26 · Mar 5, 12, 26 · Abr 2, 9, 16, 23, 30 · May 7, 14, 21, 28 · Jun 4, 11, 18, 25 · Jul 2, 9, 16, 23, 30 · Ago 6, 13, 20, 27 · Sep 3, 10, 17, 24 · Oct 1, 8, 15, 22, 29 · Nov 5, 19, 26 · Dic 3, 10, 17, 24, 31"],["2028","Ene 7, 14, 21, 28 · Feb 4, 11, 18, 25 · Mar 3, 10, 17, 24, 31 · Abr 7, 14, 21"]],
+  tip:"Ideal para un primer crucero en familia."},
+ {id:"m4", n:"4", g:"short", t:"Bahamas y Perfect Day CocoCay", ships:[["Wonder of the Seas"]],
+  route:["Miami","Nassau","CocoCay","Navegación","Miami"], season:"Todo el año, salidas los lunes",
+  dates:[["2027","Ene 4, 11, 15 · Feb 15, 22 · Mar 1, 8, 15, 22, 29 · Abr 5, 12, 19, 26 · May 10, 17, 24, 31 · Jun 7, 14, 21, 28 · Jul 5, 12, 19, 26 · Ago 2, 9, 16, 23 · Sep 6, 13, 20, 27 · Oct 4, 11, 18, 25 · Nov 1, 15, 22, 29 · Dic 6, 13, 20, 27"],["2028","Ene 3, 10, 17, 24 · Feb 7, 14, 21, 28 · Mar 6, 13, 20, 27 · Abr 3, 10, 17"]]},
+ {id:"m45b", n:"4–5", g:"short", t:"Bahamas y Perfect Day CocoCay", ships:[["Brilliance of the Seas"],["Freedom of the Seas"]],
+  route:["Miami","Nassau","Navegación","CocoCay","Miami"], season:"Enero a abril 2027",
+  dates:[["4N","Brilliance · 2027: Ene 4, 11, 18 · Feb 1, 8, 15 · Mar 1, 8, 29 · Abr 5, 12, 19"],["5N","Freedom · 2027: Ene 9, 14* · Feb 6, 11*, 20 · Mar 6, 11*, 20, 25* · Abr 3, 8*, 17"]],
+  note:"* Salida de 4 noches que visita Turks & Caicos."},
+ {id:"m5w", n:"5", g:"short", t:"Caribe Occidental y CocoCay", ships:[["Freedom of the Seas"]],
+  route:["Miami","CocoCay","Navegación","Cozumel","Navegación","Miami"], season:"Ene–abr y oct–dic 2027",
+  dates:[["2027","Ene 4*, 18 · Feb 15* · Mar 15*, 29* · Abr 12* · Oct 30 · Nov 13*, 27* · Dic 11*"]],
+  note:"* Visita Nassau en lugar de CocoCay."},
+ {id:"m45g", n:"4–5", g:"short", t:"Escapada al Caribe Occidental", ships:[["Freedom of the Seas"]],
+  route:["Miami","Navegación","Belice","Costa Maya","Navegación","Miami"], season:"Enero a abril 2028",
+  dates:[["4N","2028: Ene 13 · Mar 9, 23 · Abr 6, 20"],["5N","2028: Ene 8, 17, 22 · Feb 5, 19 · Mar 4, 18, 27 · Abr 1, 10, 15"]]},
+ {id:"m7iw", n:"7", g:"week", t:"Caribe Occidental y CocoCay", ships:[["Icon of the Seas"]],
+  route:["Miami","Navegación","Roatán","Costa Maya","Cozumel","Navegación","CocoCay","Miami"], season:"Enero a julio 2027",
+  dates:[["2027","Ene 9, 23 · Feb 6, 20 · Mar 6, 20 · Abr 3, 17 · May 1, 22 · Jun 12 · Jul 3, 24"]],
+  tip:"Icon of the Seas: uno de los barcos más grandes del mundo."},
+ {id:"m7ie", n:"7", g:"week", t:"Caribe Oriental y CocoCay", ships:[["Icon of the Seas"]],
+  route:["Miami","Navegación (2)","St. Maarten","St. Thomas","Navegación","CocoCay","Miami"], season:"Enero a julio 2027",
+  dates:[["2027","Ene 2, 16, 30 · Feb 13, 27 · Mar 13, 27 · Abr 10, 24 · May 8, 15, 29 · Jun 5, 19, 26 · Jul 10, 17, 31"]]},
+ {id:"m7hw", n:"7", g:"week", t:"CocoCay y Caribe Occidental", ships:[["Hero of the Seas","new"]],
+  route:["Miami","Navegación","Cozumel","Costa Maya","Navegación","CocoCay","Navegación","Miami"], season:"Agosto 2027 a abril 2028",
+  dates:[["2027","Ago 14 · Sep 4, 25 · Oct 16 · Nov 13, 27 · Dic 11"],["2028","Ene 8, 22 · Feb 5, 19 · Mar 4, 18 · Abr 1, 15"]],
+  tip:"Barco nuevo de Royal Caribbean con base en Miami."},
+ {id:"m7he", n:"7", g:"week", t:"CocoCay y Caribe Oriental", ships:[["Hero of the Seas","new"]],
+  route:["Miami","Navegación (2)","St. Maarten","St. Thomas","Navegación","CocoCay","Miami"], season:"Agosto 2027 a abril 2028",
+  dates:[["2027","Ago 21, 28 · Sep 11, 18 · Oct 2, 9, 23, 30 · Nov 6, 20 · Dic 4, 18, 23, 30"],["2028","Ene 1, 15, 29 · Feb 12, 26 · Mar 11, 25 · Abr 8, 22"]],
+  tip:"Incluye salidas de Navidad y Año Nuevo."},
+ {id:"m7a", n:"7", g:"week", t:"Caribe Oriental y CocoCay", ships:[["Allure of the Seas"]],
+  route:["Miami","Navegación (2)","St. Thomas","St. Kitts y Nevis","San Juan","Navegación","CocoCay","Miami"], season:"Ene–may 2027 y nov 2027–abr 2028",
+  dates:[["2027","Ene 3 · Feb 14, 21, 28 · Mar 14, 21, 28 · Abr 4, 11, 18, 25 · May 2 · Nov 14, 28 · Dic 12, 19, 26"],["2028","Ene 9, 23 · Feb 6, 20 · Mar 5, 19 · Abr 2, 16"]]},
+ {id:"m7ind", n:"7", g:"week", t:"Caribe Oriental", ships:[["Independence of the Seas"]],
+  route:["Miami","CocoCay","Navegación","San Juan","St. Thomas","Navegación (2)","Miami"], season:"Ene–abr 2027 y nov 2027–abr 2028",
+  dates:[["2027","Ene 10, 24* · Feb 7 · Mar 7, 21* · Abr 4, 18 · Nov 21* · Dic 5*"],["2028","Mar 11 · Abr 8*"]],
+  note:"* Esta salida no visita CocoCay."},
+ {id:"m9", n:"9", g:"long", t:"Caribe Sur y CocoCay", ships:[["Freedom of the Seas"],["Independence of the Seas"]],
+  route:["Miami","CocoCay","Navegación","Cabo Rojo (R. Dominicana)","Navegación","Curazao","Aruba","Navegación (2)","Miami"], season:"2027 y ene–feb 2028",
+  dates:[["Freedom","2027: Ene 28 · Feb 25* · Abr 22 · May 6, 20 · Nov 4, 18* · Dic 2* — 2028: Ene 27* · Feb 10*, 24*"],["Indep.","2027: Nov 6 · Dic 10, 19, 27 — 2028: Ene 10"]],
+  note:"* Visita Nassau en lugar de CocoCay."}
+];
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const isPort = p => !/^Navegación|^Miami$/.test(p);
+const list = document.getElementById("list");
+list.innerHTML = TRIPS.map(t => {
+  const ships = t.ships.map(s => s[0]).join(" / ");
+  const msg = `Hola Ivonne Vacations, quiero cotizar el crucero Royal Caribbean de ${t.n} noches "${t.t}" en ${ships}, saliendo de Miami. Somos __ personas y nos interesa el mes de __.`;
+  return `<article class="card" data-g="${t.g}">
+   <div class="c-top"><div class="nights"><b>${t.n}</b><i>NOCHES</i></div>
+    <div><h3>${esc(t.t)}</h3><div class="tags">${t.ships.map(s => `<span class="tag">${esc(s[0])}</span>${s[1] ? '<span class="tag new">Nuevo</span>' : ''}`).join("")}</div></div></div>
+   <ol class="route" aria-label="Ruta">${t.route.map(p => `<li class="${isPort(p) ? "port" : ""}">${esc(p)}</li>`).join("")}</ol>
+   <div class="season"><strong>Temporada:</strong> ${esc(t.season)}${t.tip ? `<p class="note">${esc(t.tip)}</p>` : ""}</div>
+   <details><summary>Ver fechas</summary><div class="dates">${t.dates.map(d => `<div><em>${esc(d[0])}</em><span>${esc(d[1])}</span></div>`).join("")}</div>${t.note ? `<p class="note" style="margin-top:8px">${esc(t.note)}</p>` : ""}</details>
+   <div class="c-foot"><span>Sale de PortMiami</span><a class="btn btn-wa" href="${waUrl(msg)}" target="_blank" rel="noopener">Cotizar este</a></div>
+  </article>`;
+}).join("");
+document.querySelectorAll(".chip").forEach(ch => ch.addEventListener("click", () => {
+  document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === ch));
+  list.querySelectorAll(".card").forEach(c => c.hidden = !(ch.dataset.f === "all" || c.dataset.g === ch.dataset.f));
+}));
+</script>
+
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(a){try{fbq('track','Contact',{content_name:'ivonne-royal-caribbean-miami'})}catch(x){}}});</script>
+</body>
+</html>

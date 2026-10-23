@@ -1,0 +1,125 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recibe ofertas de viaje · Ivonne Vacations</title>
+<meta name="description" content="Déjanos tu correo y recibe primero las ofertas de cruceros, parques, resorts y tours en Orlando y Florida. Atención en español.">
+<meta property="og:title" content="Recibe las mejores ofertas de viaje · Ivonne Vacations">
+<meta property="og:description" content="Solo tu correo. Te enviamos promociones de cruceros, parques y resorts en Orlando, en español.">
+<meta property="og:image" content="https://promos.ivonnevacations.com/img/familia-ivonne.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c3445;--deep:#08212b;--paper:#fbf3e2;--ink:#142027;--soft:#4d5f66;--coral:#ef7245;--coral-d:#d65a30;--gold:#dba845;--wa:#25d366}
+*{box-sizing:border-box}body{margin:0;font:400 17px/1.55 'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.1;margin:0 0 .5em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--deep);padding:10px 0}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+header a.brand{display:flex;align-items:center;text-decoration:none}header img{height:52px;border-radius:50%}header span{color:#fff;font:700 18px 'Bricolage Grotesque';margin-left:10px;letter-spacing:.06em}
+header .web{color:#fff;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid rgba(255,255,255,.5);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.hero{background:var(--bg);color:#fff;padding:48px 0 56px}.hero .g{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kick{font:600 13px 'IBM Plex Mono',monospace;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+h1{font-size:clamp(32px,5vw,52px)}h1 em{font-style:normal;color:var(--coral)}
+.hero p.lead{color:#d8e6ea;font-size:19px;margin:0 0 22px}
+.hero img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+form{background:#fff;border-radius:18px;padding:8px;display:flex;gap:8px;max-width:520px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+form input[type=email]{flex:1;min-width:0;border:0;font:500 17px 'Work Sans',sans-serif;padding:14px 14px;border-radius:12px;color:var(--ink);background:transparent}
+form input[type=email]:focus{outline:2px solid var(--gold);outline-offset:0}
+form button{background:var(--coral);color:#fff;border:0;font:700 17px 'Work Sans',sans-serif;padding:14px 22px;border-radius:12px;cursor:pointer;white-space:nowrap}
+form button:hover{background:var(--coral-d)}form button[disabled]{opacity:.7;cursor:wait}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.privacy{color:#a9c3cb;font-size:13.5px;margin:10px 0 0;max-width:520px}
+.msg{display:none;max-width:520px;border-radius:14px;padding:16px 18px;font-weight:500}
+.msg.ok{display:block;background:#fff;color:var(--ink);border-left:6px solid var(--wa)}
+.msg.err{display:block;background:#fff1ec;color:var(--coral-d);margin-top:10px;padding:10px 14px;font-size:15px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;color:var(--gold);font-weight:600;font-size:15px}
+section{padding:52px 0}
+.items{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.it{background:#fff;border-radius:14px;overflow:hidden}.it img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.it div{padding:14px 16px;font-weight:600;color:var(--bg)}
+.contact{background:#fff}.contact .g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+.card{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:14px;text-decoration:none;font-weight:600;color:#fff;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}.card svg{width:28px;height:28px;flex:none;fill:#fff}.card small{display:block;font-weight:400;font-size:13.5px;opacity:.9}
+.c-wa{background:var(--wa)}.c-web{background:var(--bg)}.c-fb{background:#1877f2}.c-ig{background:linear-gradient(45deg,#f9a03f,#e1306c 50%,#833ab4)}
+footer{background:var(--deep);color:#a9c3cb;font-size:14px;padding:22px 0;text-align:center}
+@media(max-width:860px){.items,.contact .g{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.hero .g{grid-template-columns:1fr}.hero img{aspect-ratio:16/10}.hero{padding:32px 0 40px}}
+@media(max-width:460px){form{flex-direction:column}form button{width:100%}.contact .g{grid-template-columns:1fr}header span{display:none}}
+</style>
+<script>
+// ===== CONFIGURACIÓN (completar antes de publicar) =====
+var CONFIG={
+  // Mailchimp (la misma cuenta que usará el newsletter de ivonnevacations.com):
+  // Audience → Signup forms → Embedded forms → copiar el action="https://ivonnevacations.usX.list-manage.com/subscribe/post?u=...&id=..." del <form>.
+  MAILCHIMP_ACTION:'https://ivonnevacations.us5.list-manage.com/subscribe/post?u=0581f467a3c5c1ddbc0fa5e07&id=d4dba59890&f_id=0039fce3f0',
+  MAILCHIMP_TAG:'4142993',                             // etiqueta "landing-registro" (ID de Mailchimp)
+  FACEBOOK_URL:'https://www.facebook.com/1240308519176039',
+  INSTAGRAM_URL:'https://www.instagram.com/ivonnevacations1/'
+};
+</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','327778608601970');fbq('track','PageView');</script>
+</head><body>
+<header><div class="wrap"><a class="brand" href="https://ivonnevacations.com"><img src="https://promos.ivonnevacations.com/img/logo.png" alt="Ivonne Vacations"><span>IVONNE VACATIONS</span></a><a class="web" href="https://ivonnevacations.com">ivonnevacations.com</a></div></header>
+
+<div class="hero"><div class="wrap g"><div>
+<div class="kick">Ofertas exclusivas por correo</div>
+<h1>Viaja a Orlando y Florida <em>pagando menos</em></h1>
+<p class="lead">Déjanos tu correo y te avisamos primero de promociones de cruceros, parques, resorts y tours. Sin compromiso.</p>
+
+<form id="f" novalidate>
+<label class="hp" for="email_address_check">No llenar</label><input class="hp" type="text" id="email_address_check" tabindex="-1" autocomplete="off">
+<label class="hp" for="EMAIL">Correo electrónico</label>
+<input type="email" id="EMAIL" name="EMAIL" placeholder="Tu correo electrónico" autocomplete="email" inputmode="email" required>
+<button type="submit" id="b">Quiero ofertas</button>
+</form>
+<div class="msg" id="err" role="alert"></div>
+<div class="msg" id="ok" role="status">🎉 <b>¡Listo, ya estás en la lista!</b><br>Pronto te llegarán nuestras ofertas. Si quieres cotizar algo ya, <a href="#" class="js-wa" style="color:var(--coral-d);font-weight:700">escríbenos por WhatsApp</a>.</div>
+<p class="privacy" id="pv">Solo te pedimos tu correo. No lo compartimos con nadie y puedes darte de baja con un clic en cualquier momento.</p>
+<div class="trust"><span>✓ Atención en español</span><span>✓ Familia ecuatoriana en Orlando</span><span>✓ Respuesta el mismo día</span></div>
+</div>
+<img src="https://promos.ivonnevacations.com/img/familia-ivonne.jpg" alt="Ivonne y su familia en Orlando"></div></div>
+
+<section><div class="wrap"><h2>Lo que recibirás</h2><div class="items">
+<div class="it"><img src="https://promos.ivonnevacations.com/img/cruise-ocean-view-1.jpg" alt="Crucero en el mar" loading="lazy"><div>Cruceros en promoción</div></div>
+<div class="it"><img src="https://promos.ivonnevacations.com/img/ivonne-parques-noche.jpg" alt="Parques de Orlando de noche" loading="lazy"><div>Entradas a parques</div></div>
+<div class="it"><img src="https://promos.ivonnevacations.com/img/resort-lobby-1.jpg" alt="Resort en Orlando" loading="lazy"><div>Resorts en Orlando</div></div>
+<div class="it"><img src="https://promos.ivonnevacations.com/img/outlets-shopping-1.jpg" alt="Compras en los outlets" loading="lazy"><div>Tours, compras y transporte</div></div>
+</div></div></section>
+
+<section class="contact"><div class="wrap"><h2>¿Prefieres hablar ya?</h2><p style="color:var(--soft);margin-top:0">Escríbenos o síguenos en redes para ver las ofertas del día.</p><div class="g">
+<a class="card c-wa js-wa" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp<small>+1 407 576 4149</small></span></a>
+<a class="card c-web" href="https://ivonnevacations.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.7 15.7 0 0 0-1.3-3.6A8.1 8.1 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3zm.8 2h3a15.7 15.7 0 0 0 1.3 3.6A8.1 8.1 0 0 1 5.1 16zm3-8h-3a8.1 8.1 0 0 1 4.3-3.6C8.8 5.5 8.4 6.7 8.1 8zM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4zm.3 5.6c.6-1.1 1-2.3 1.3-3.6h3a8.1 8.1 0 0 1-4.3 3.6zm1.7-5.6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4z"/></svg><span>Página web<small>ivonnevacations.com</small></span></a>
+<a class="card c-fb" id="fb" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook<small>Ivonne Vacations</small></span></a>
+<a class="card c-ig" id="ig" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.2 5.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.9c0-1.6-.4-3-1.6-4.2S17.7 2.1 16.1 2c-1.6-.1-6.6-.1-8.2 0-1.6.1-3 .5-4.2 1.6S2.1 6.3 2 7.9c-.1 1.6-.1 6.6 0 8.2.1 1.6.5 3 1.6 4.2s2.6 1.6 4.2 1.6c1.6.1 6.6.1 8.2 0 1.6-.1 3-.5 4.2-1.6s1.6-2.6 1.6-4.2c.1-1.6.1-6.6 0-8.2zm-2.1 10a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.2 3.2 0 0 1 6.3 4.7c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg><span>Instagram<small>@ivonnevacations1</small></span></a>
+</div></div></section>
+
+<footer><div class="wrap">© SUTELCOM LLC, operando como Ivonne Vacations · Orlando, FL · <a href="https://ivonnevacations.com" style="color:#fff">ivonnevacations.com</a></div></footer>
+
+<script>
+(function(){
+  var WA='https://wa.me/14075764149?text='+encodeURIComponent('Hola Ivonne Vacations, quiero información sobre sus ofertas de viaje.');
+  document.querySelectorAll('.js-wa').forEach(function(a){a.href=WA;a.target='_blank';a.rel='noopener';a.addEventListener('click',function(){try{fbq('track','Contact',{content_name:'ivonne-registro'})}catch(e){}})});
+  var fb=document.getElementById('fb'),ig=document.getElementById('ig');
+  fb.href=CONFIG.FACEBOOK_URL;ig.href=CONFIG.INSTAGRAM_URL;[fb,ig].forEach(function(a){a.target='_blank';a.rel='noopener'});
+
+  var f=document.getElementById('f'),em=document.getElementById('EMAIL'),b=document.getElementById('b'),
+      ok=document.getElementById('ok'),err=document.getElementById('err'),pv=document.getElementById('pv');
+  function fail(t){err.textContent=t;err.className='msg err';}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();err.className='msg';
+    var v=em.value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){fail('Revisa tu correo, parece que le falta algo (ej. nombre@gmail.com).');em.focus();return;}
+    if(document.getElementById('email_address_check').value){return;} // bot
+    b.disabled=true;b.textContent='Enviando…';
+    function done(){f.style.display='none';pv.style.display='none';ok.className='msg ok';try{fbq('track','Lead',{content_name:'ivonne-registro'})}catch(e){}}
+    function retry(t){b.disabled=false;b.textContent='Quiero ofertas';fail(t||'No pudimos registrarte. Inténtalo de nuevo o escríbenos por WhatsApp.');}
+    if(!CONFIG.MAILCHIMP_ACTION){console.warn('MAILCHIMP_ACTION sin configurar: el correo no se guardó (modo vista previa).');done();return;}
+    // Mailchimp acepta JSONP en /subscribe/post-json: así el visitante no sale de la página.
+    var cb='mc'+Date.now(),s=document.createElement('script'),t=setTimeout(function(){cleanup();retry();},12000);
+    function cleanup(){clearTimeout(t);delete window[cb];s.remove();}
+    window[cb]=function(r){cleanup();
+      if(r.result==='success'||/already subscribed|ya est/i.test(r.msg||''))done();
+      else retry(/too many/i.test(r.msg||'')?'Demasiados intentos con este correo. Prueba más tarde.':'Revisa tu correo e inténtalo de nuevo.');};
+    s.src=CONFIG.MAILCHIMP_ACTION.replace('/post?','/post-json?')+'&EMAIL='+encodeURIComponent(v)+'&tags='+CONFIG.MAILCHIMP_TAG+'&b_0581f467a3c5c1ddbc0fa5e07_d4dba59890=&c='+cb;
+    s.onerror=function(){cleanup();retry();};
+    document.body.appendChild(s);
+  });
+})();
+</script>
+</body></html>
